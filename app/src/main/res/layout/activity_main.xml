@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <RadioGroup
+       android:id="@+id/group_1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="#00BFFF"
+       android:orientation="horizontal"
+       tools:ignore="MissingConstraints">
+
+      <TextView
+          android:id="@+id/text_1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="请选择您的性别:"
+          android:textSize="24dp" />
+
+      <RadioButton
+          android:id="@+id/button_1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="男生"
+          android:textColor="#D2691E"
+          android:textSize="24dp"
+          android:textStyle="bold" />
+
+      <RadioButton
+          android:id="@+id/button_2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="女生"
+          android:textColor="#E9967A"
+          android:textSize="24dp"
+          android:textStyle="bold" />
+
+   </RadioGroup>
+
+   <TextView
+       android:id="@+id/text2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="您选择的性别是："
+       android:textColor="#800000"
+       android:textSize="24dp"
+       app:layout_constraintTop_toBottomOf="@+id/group_1"
+       tools:ignore="MissingConstraints,NotSibling" />
+
+   <CheckBox
+       android:id="@+id/box_1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="羽毛球"
+       app:layout_constraintTop_toBottomOf="@+id/text2"
+       tools:ignore="MissingConstraints" />
+
+   <CheckBox
+       android:id="@+id/box_2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="篮球"
+       app:layout_constraintStart_toStartOf="@+id/box_1"
+       app:layout_constraintTop_toBottomOf="@+id/box_1"
+       tools:ignore="MissingConstraints" />
+
+   <CheckBox
+       android:id="@+id/box_3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="乒乓球"
+       app:layout_constraintTop_toBottomOf="@+id/box_2"
+       tools:ignore="MissingConstraints" />
+
+   <TextView
+       android:id="@+id/text3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text=""
+       android:textSize="24dp"
+       app:layout_constraintTop_toBottomOf="@+id/box_3"
+       tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
